@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "davidanson.vscode-markdownlint",
+    "timonwong.shellcheck",
+    "eamodio.gitlens",
+    "editorconfig.editorconfig",
+    "hashicorp.terraform",
+    "ms-vscode.vscode-json",
+    "streetsidesoftware.code-spell-checker"
+  ],
+  "unwantedRecommendations": []
+}
