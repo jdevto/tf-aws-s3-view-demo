@@ -1,0 +1,45 @@
+{
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.trimAutoWhitespace": true,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "editor.rulers": [80, 120],
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.wordWrapColumn": 120,
+
+  // Editor settings
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "davidanson.vscode-markdownlint",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.trimAutoWhitespace": true,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true
+  },
+  "[shellscript]": {
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true
+  },
+
+  "search.exclude": {
+    "**/.git": true,
+    "**/node_modules": true,
+    "**/__pycache__": true,
+    "**/.DS_Store": true
+  },
+
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true
+  }
+}

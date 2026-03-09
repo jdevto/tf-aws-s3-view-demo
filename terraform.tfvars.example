@@ -1,0 +1,20 @@
+# Copy to terraform.tfvars and replace with your values.
+# terraform.tfvars is typically gitignored; this file is safe to commit.
+
+ecs_cluster_arn    = "arn:aws:ecs:ap-southeast-2:123456789012:cluster/YOUR_CLUSTER_NAME"
+vpc_id             = "vpc-xxxxxxxxxxxxxxxxx"
+private_subnet_ids = ["subnet-aaaaaaaaaaaaaaaaa", "subnet-bbbbbbbbbbbbbbbbb"]
+
+environment   = "dev"
+desired_count = 1
+app_port      = 8000
+
+# Default image is amazon/aws-cli; health check runs 'aws s3 ls' against the sample bucket (task role).
+
+# Optional: restrict task role to an S3 path prefix (empty = whole bucket)
+# task_s3_path_prefix = "data/"
+
+tags = {
+  Project   = "s3-browser"
+  ManagedBy = "terraform"
+}
